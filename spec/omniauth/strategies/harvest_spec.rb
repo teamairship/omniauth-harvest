@@ -26,7 +26,7 @@ describe OmniAuth::Strategies::Harvest do
     end
 
     it 'has correct token url' do
-      subject.client.options[:token_url].should eq('/oauth2/token')
+      subject.client.options[:token_url].should eq('/api/v1/oauth2/token')
     end
   end
 
